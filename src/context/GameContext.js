@@ -1,5 +1,5 @@
 import { createContext, useState, useContext } from 'react';
-import { tiraiData } from '.../nameisalsoeffort/src/data/TiraiData.js"';
+import { tiraiData } from '../data/TiraiData.js';
 
 const GameContext = createContext();
 
