@@ -1,8 +1,8 @@
 // src/components/QuizSection.js
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { useGameContext } from 'C:\Users\LENOVO\Downloads\nameisalsoeffort\nameisalsoeffort\src\context\GameContext.js';
-import { quizData } from 'C:\Users\LENOVO\Downloads\nameisalsoeffort\nameisalsoeffort\src\data\QuizData.js';
+import { useGameContext } from '../context/GameContext';
+import { quizData } from '../data/QuizData';
 import useSound from 'use-sound';
 
 export default function QuizSection() {
