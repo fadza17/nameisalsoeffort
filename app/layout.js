@@ -1,4 +1,4 @@
-import { GameProvider } from '@/context/GameContext';
+import { GameProvider } from '../context/GameContext';
 import '../styles/globals.css';
 
 export default function RootLayout({ children }) {
