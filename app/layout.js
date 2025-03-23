@@ -1,5 +1,5 @@
-import { GameProvider } from '../context/GameContext';
-import '../styles/globals.css';
+import { GameProvider } from './context/GameContext';
+import './styles/globals.css';
 
 export default function RootLayout({ children }) {
   return (
