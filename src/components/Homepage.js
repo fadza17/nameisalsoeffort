@@ -1,5 +1,5 @@
 // src/components/HomePage.js
-import { useGameContext } from '"C:\Users\LENOVO\Downloads\nameisalsoeffort\nameisalsoeffort\src\context\GameContext.js"';
+import { useGameContext } from '../context/GameContext';
 import { motion } from 'framer-motion';
 
 export default function HomePage() {
