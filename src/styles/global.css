@@ -1,0 +1,388 @@
+/* src/styles/globals.css */
+:root {
+    --primary-color: #ff6b6b;
+    --secondary-color: #4ecdc4;
+    --accent-color: #ffd166;
+    --background-color: #f7f9fb;
+    --text-color: #2d3748;
+    --success-color: #48bb78;
+    --error-color: #f56565;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    background-image: url('C:/Users/LENOVO/Downloads/nameisalsoeffort/nameisalsoeffort/public/images/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  .main-container {
+    min-height: 100vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Home Page Styling */
+  .home-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 3rem;
+    max-width: 800px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .home-title {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+  }
+  
+  .home-description {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+  }
+  
+  .game-instructions {
+    background-color: rgba(78, 205, 196, 0.1);
+    padding: 1.5rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+  
+  .game-instructions p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+  }
+  
+  .game-instructions ul {
+    list-style-type: none;
+    margin-bottom: 1rem;
+  }
+  
+  .game-instructions li {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+  }
+  
+  .start-button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .start-button:hover {
+    background-color: #ff5252;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+  }
+  
+  /* Quiz Section Styling */
+  .quiz-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 2rem;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .quiz-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .quiz-header h2 {
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+  }
+  
+  .score-display {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-weight: 600;
+  }
+  
+  .quiz-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .quiz-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .quiz-question {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--text-color);
+  }
+  
+  .options-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    width: 100%;
+  }
+  
+  .option-button {
+    background-color: white;
+    border: 2px solid var(--secondary-color);
+    padding: 1rem;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .option-button:hover {
+    background-color: var(--secondary-color);
+    color: white;
+  }
+  
+  .option-button.correct {
+    background-color: var(--success-color);
+    color: white;
+    border-color: var(--success-color);
+  }
+  
+  .option-button.wrong {
+    background-color: var(--error-color);
+    color: white;
+    border-color: var(--error-color);
+  }
+  
+  /* Tirai Section Styling */
+  .tirai-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 2rem;
+    max-width: 900px;
+    width: 100%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tirai-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .tirai-header h2 {
+    color: var(--primary-color);
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .tirai-header p {
+    font-size: 1.2rem;
+    color: var(--text-color);
+  }
+  
+  .tirai-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .tirai-item {
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  .tirai-item:hover {
+    transform: translateY(-10px);
+  }
+  
+  .tirai-image {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0.5rem;
+    transition: all 0.3s ease;
+  }
+  
+  .tirai-item.selected .tirai-image {
+    border: 3px solid var(--accent-color);
+  }
+  
+  /* Modal Styling */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+  }
+  
+  .modal-content {
+    background-color: white;
+    border-radius: 15px;
+    padding: 2rem;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+    .modal-content h3 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    }
+    .modal-content p {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+    }
+    .modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    }
+    .cancel-button, .confirm-button {
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    }
+    .cancel-button {
+    background-color: #e2e8f0;
+    color: var(--text-color);
+    border: none;
+    }
+    .confirm-button {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    }
+    /* Reveal Styling */
+    .reveal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    }
+    .reveal-content {
+    background-color: white;
+    border-radius: 20px;
+    padding: 2rem;
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    }
+    .reveal-header {
+    margin-bottom: 1.5rem;
+    }
+    .reveal-header h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    }
+    .reveal-info {
+    margin-bottom: 2rem;
+    }
+    .reveal-image {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    .reveal-title {
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    }
+    .reveal-description {
+    text-align: left;
+    background-color: rgba(255, 209, 102, 0.1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    }
+    .reveal-description p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    }
+    .close-button {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    }
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+    .home-container {
+    padding: 2rem;
+    }
+    .home-title {
+    font-size: 2rem;
+    }
+    .tirai-grid {
+    grid-template-columns: repeat(2, 1fr);
+    }
+    .options-grid {
+    grid-template-columns: 1fr;
+    }
+    }
+    @media (max-width: 480px) {
+    .home-container, .quiz-container, .tirai-container {
+    padding: 1.5rem;
+    }
+    .home-title {
+    font-size: 1.8rem;
+    }
+    .tirai-grid {
+    grid-template-columns: 1fr;
+    }
+    }
