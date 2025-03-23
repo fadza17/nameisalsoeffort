@@ -1,6 +1,6 @@
 // src/pages/_app.js
 import { GameProvider } from '../context/GameContext';
-import '../styles/globals.css';
+import '"C:\Users\LENOVO\Downloads\nameisalsoeffort\src\styles\global.css"';
 
 function MyApp({ Component, pageProps }) {
   return (
